@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./UnderConstruction.css";
 import constructionImage from '../assets/constructionImage.png';
 
 function UnderConstruction() {
+  // FOOTER CURRENT YEAR 
+   const [currentYear, setCurrentYear] = useState('');
+    useEffect(() => {
+        setCurrentYear(new Date().getFullYear());
+    }, []);
+
   const cursorRef = useRef(null);
   const cursorFollowerRef = useRef(null);
 
@@ -121,9 +127,7 @@ function UnderConstruction() {
       </div>
 
       {/* Footer Text - Now properly positioned at bottom */}
-      <div className="uc_footer-text">
-        designed by Adinn Digital
-      </div>
+      <div className="uc_footer-text"> &copy; {currentYear} Designed by Adinn Digital. All rights reserved. </div>
     </section>
   </>
 );
