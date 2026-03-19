@@ -122,10 +122,13 @@
 }
 
 @keyframes uc_particleFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0);
     opacity: 0.3;
   }
+
   50% {
     transform: translate(5px, -5px);
     opacity: 0.6;
@@ -181,9 +184,12 @@
 }
 
 @keyframes uc_gradientMove {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1) rotate(0deg);
   }
+
   50% {
     transform: scale(1.1) rotate(60deg);
   }
@@ -201,7 +207,7 @@
   justify-content: center; */
   align-items: center;
   align-content: center;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   /* padding: 100px 20px 40px; */
 }
@@ -219,7 +225,7 @@
   animation: uc_containerAppear 0.8s ease-out;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   margin: auto;
   gap: 40px;
 }
@@ -229,6 +235,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -287,6 +294,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -329,15 +337,15 @@
 }
 
 .uc_footer-text {
-position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 1%;
-    color: #1a6af5;
-    font-size: 14px;
-    transition: transform 0.3s ease;
-    text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 1%;
+  color: #1a6af5;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .uc_footer-text:hover {
@@ -377,9 +385,12 @@ position: absolute;
 }
 
 @keyframes uc_imageFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -423,6 +434,7 @@ position: absolute;
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -451,10 +463,13 @@ position: absolute;
 }
 
 @keyframes uc_floatDot {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
     opacity: 0.3;
   }
+
   50% {
     transform: translateY(-15px);
     opacity: 0.6;
@@ -488,22 +503,24 @@ position: absolute;
 }
 
 @media screen and (max-width: 768px) {
-  .uc_cursor, .uc_cursor-follower {
+
+  .uc_cursor,
+  .uc_cursor-follower {
     display: none;
   }
-  
+
   .uc_navbar {
     padding: 15px 20px;
   }
-  
+
   .uc_nav-menu {
     gap: 15px;
   }
-  
+
   .uc_nav-link {
     font-size: 14px;
   }
-  
+
   .uc_construction-container {
     padding: 30px 20px;
   }
@@ -517,7 +534,7 @@ position: absolute;
   .uc_nav-menu {
     display: none;
   }
-  
+
   .uc_construction-container {
     padding: 20px 15px;
   }
@@ -546,7 +563,3 @@ position: absolute;
     max-height: 150px;
   }
 }
-
-
-
-
